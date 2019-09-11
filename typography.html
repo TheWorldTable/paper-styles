@@ -9,7 +9,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 
 <link rel="import" href="../polymer/polymer.html">
-<link rel="import" href="../font-roboto/roboto.html">
+<!-- <link rel="import" href="../font-roboto/roboto.html"> -->
 
 <style is="custom-style">
 
@@ -167,3 +167,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   }
 
 </style>
+<script>
+  if (!document.getElementById('twt-roboto-link') && !document.getElementById('twt-roboto-link-2')) {
+    var el = document.createElement('link');
+    el.id = 'twt-roboto-link-2';
+    el.rel = 'stylesheet';
+    el.type = 'text/css';
+    el.href = 'https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,300,300italic,400italic,500,500italic,700,700italic';
+    (document.head || document.body).appendChild(el);
+  }
+</script>
